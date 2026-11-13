@@ -1,0 +1,122 @@
+<link rel="stylesheet " href="/css/newNav.css ">
+
+<header>
+    <a href="/" class="logo">
+        <img src="https://i.imgur.com/9pEllgL.jpeg" alt="yadihel">
+        <p><b>Portafolio</b></p>
+    </a>
+
+    <button id="btnopen" aria-label="Abrir El Menu">
+        <i class="fas fa-bars" style="color:white;"></i>
+    </button>
+
+    <ul id="navopen" class="navclosed">
+        <li>
+            <a href="/">
+                <i class="fa-solid fa-house"></i>
+                <p>Inicio</p>
+            </a>
+        </li>
+        <li>
+            <a href="/proyectos">
+                <i class="fa-solid fa-code"></i>
+                <p>Proyectos</p>
+            </a>
+        </li>
+        <li>
+            <a href="/cherylcann">
+                <i class="fa-solid fa-mug-hot"></i>
+                <p>infografía</p>
+            </a>
+        </li>
+        <div>
+            <li>
+                <a href="https://github.com/cherylcann">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@cherylcann">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.paypal.com/paypalme/inuyadieru">
+                    <i class="fa-sharp fa-solid fa-hand-holding-heart"></i>
+                </a>
+            </li>
+        </div>
+    </ul>
+</header>
+
+
+<div id="menu" onmouseover="abrirMenu()" onmouseout="cerrarMenu()" class="menu-cerrado">
+    <div class="icon">
+        <img src="https://i.imgur.com/9pEllgL.jpeg" alt="yadihel">
+        <p><b>Portafolio</b></p>
+    </div>
+    <hr id="menuhr1" class="hrclosed">
+    <div class="navicons">
+        <a href="/">
+            <i class="fa-solid fa-house"></i>
+            <p>Inicio</p>
+        </a>
+        <a href="/proyectos">
+            <i class="fa-solid fa-code"></i>
+            <p>Proyectos</p>
+        </a>
+        <a href="/cherylcann">
+            <i class="fa-solid fa-mug-hot"></i>
+            <p>infografía</p>
+        </a>
+    </div>
+    <hr id="menuhr2" class="hrclosed" style="margin-top: 10px">
+    <div class="navend">
+        <a href="https://github.com/cherylcann">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <p>GitHub</p>
+        </a>
+        <a href="https://www.youtube.com/@cherylcann">
+            <i class="fa-brands fa-youtube"></i>
+            <p>Youtube</p>
+        </a>
+        <a href="https://www.paypal.com/paypalme/inuyadieru">
+            <i class="fa-sharp fa-solid fa-hand-holding-heart"></i>
+            <p>Donaciones</p>
+        </a>
+    </div>
+</div>
+
+<script>
+
+    const menu = document.getElementById("menu");
+    const hr1 = document.getElementById("menuhr1");
+    const hr2 = document.getElementById("menuhr2");
+    function abrirMenu() {
+        menu.style.width = "300px";
+        menu.className = "menu-abierto";
+        hr1.className = "hropen";
+        hr2.className = "hropen";
+    }
+
+    function cerrarMenu() {
+        menu.style.width = "65px";
+        menu.className = "menu-cerrado";
+        hr1.className = "hrclosed";
+        hr2.className = "hrclosed";
+    }
+
+    const btn = document.getElementById('btnopen');
+    const navMenu = document.getElementById('navopen');
+
+    btn.addEventListener('click', () => {
+
+        if (navMenu.className === "navclosed") {
+            navMenu.className = "navopen";
+            document.body.style.overflow = "hidden";
+        } else {
+            navMenu.className = "navclosed"
+            document.body.style.overflow = "";
+        }
+    });
+</script>

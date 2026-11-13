@@ -1,0 +1,144 @@
+<%- include ('partials/headNew.html') %>
+
+    <body>
+        <canvas id="net" aria-hidden="true"></canvas>
+        <div class="glow"></div>
+
+        <%- include ('partials/sidebar.html') %>
+
+            <main class="wrap">
+                <header class="ph">
+                    <div class="eye mono"><i></i>&lt;proyectos /&gt;</div>
+                    <h1><span class="nm">Proyectos</span></h1>
+                    <p class="sub">Este es mi <span>historial</span>, en el cual encontraras todas mis creaciones. <svg
+                            viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg></p>
+                </header>
+
+                <div class="fl" role="group" aria-label="Filtrar por año"><button type="button" data-y="all"
+                        aria-pressed="true">Todos</button><button type="button" data-y="2026"
+                        aria-pressed="false">2026</button><button type="button" data-y="2023"
+                        aria-pressed="false">2023</button><button type="button" data-y="2022"
+                        aria-pressed="false">2022</button><button type="button" data-y="2020"
+                        aria-pressed="false">2020</button></div>
+
+                <section class="grid">
+                    <a class="pcard" href="/" data-year="2026" style="--c:#fdc1c1;--i:0">
+                        <div class="media"><span class="no" aria-hidden="true">01</span><img
+                                src="https://i.imgur.com/WJY1QOI.gif" alt="cherylcann infografia" loading="lazy"><em
+                                class="yr">2026</em><i class="go" aria-hidden="true">↗</i></div>
+                        <div class="body">
+                            <h3>Infografía v2.0</h3>
+                            <p>Conoce mi recorrido por el mundo del <span>desarrollo de software</span>, las tecnologías que utilizo, mis habilidades en <span>programación</span> y los proyectos que dan vida a mis ideas...</p>
+                        </div>
+                    </a>
+                    <a class="pcard" href="https://playauroria.netlify.app/" data-year="2026" style="--c:#12F7D6;--i:0">
+                        <div class="media"><span class="no" aria-hidden="true">02</span><img
+                                src="https://i.imgur.com/2g4X3hw.gif" alt="cherylcann auroria" loading="lazy"><em
+                                class="yr">2026</em><i class="go" aria-hidden="true">↗</i></div>
+                        <div class="body">
+                            <h3>AurorIA</h3>
+                            <p>Explora experiencias de <span>visión por computadora</span> desde tu navegador web,
+                                juegos interactivos y herramientas de dibujo impulsados por <span>Inteligencia
+                                    Artificial</span>.</p>
+                        </div>
+                    </a>
+                    <div class="pcard nolink" data-year="2026" style="--c:#FFD23F;--i:1">
+                        <div class="media"><span class="no" aria-hidden="true">03</span><img
+                                src="https://i.imgur.com/M84icby.gif" alt="cherylcann San Marcos" loading="lazy"><em
+                                class="yr">2026</em></div>
+                        <div class="body">
+                            <h3>¡Ingreso a San Marcos!</h3>
+                            <p>Despues de <span>año y medio</span> estudiante logre cumplir mi sueño mas grande, esta es
+                                la puerta a la universidad y el inicio de algo mucho mas grande.</p>
+                        </div>
+                    </div>
+                    <a class="pcard" href="https://cherylcann.github.io/san-valentin-2024/" data-year="2023"
+                        style="--c:#FF3D9A;--i:2">
+                        <div class="media"><span class="no" aria-hidden="true">04</span><img
+                                src="https://i.imgur.com/fXcNXNS.gif" alt="cherylcann San Valentín" loading="lazy"><em
+                                class="yr">2023</em><i class="go" aria-hidden="true">↗</i></div>
+                        <div class="body">
+                            <h3>San Valentín 2024</h3>
+                            <p>Una forma bastante carismática de pedirle a alguien una salida siendo imposible que te
+                                diga no.</p>
+                            <div class="tags"><span class="tag">código libre</span></div>
+                        </div>
+                    </a>
+                    <a class="pcard" href="https://cherylcann.github.io/calculadora/" data-year="2023"
+                        style="--c:#3DD6F5;--i:3">
+                        <div class="media"><span class="no" aria-hidden="true">05</span><img
+                                src="https://i.imgur.com/7pUUjka.gif" alt="cherylcann calculadora" loading="lazy"><em
+                                class="yr">2023</em><i class="go" aria-hidden="true">↗</i></div>
+                        <div class="body">
+                            <h3>Calculadora</h3>
+                            <p>Calculadora Web con comandos básicos <span>suma</span>, <span>resta</span>,
+                                <span>división</span>, <span>multiplicación</span> y trabajo con <span>decimales</span>.
+                            </p>
+                            <div class="tags"><span class="tag">código libre</span></div>
+                        </div>
+                    </a>
+                    <a class="pcard" href="https://cherylcann.netlify.app/" data-year="2023" style="--c:#9B85FF;--i:4">
+                        <div class="media"><span class="no" aria-hidden="true">06</span><img
+                                src="https://i.imgur.com/8CUUgne.gif" alt="cherylcann infografia" loading="lazy"><em
+                                class="yr">2023</em><i class="go" aria-hidden="true">↗</i></div>
+                        <div class="body">
+                            <h3>Infografía v1.0</h3>
+                            <p>Pagina donde podrás encontrar todos mis <span>proyectos</span> y <span>información sobre
+                                    mí</span>.</p>
+                            <div class="tags"><span class="tag">Rediseñada</span></div>
+                        </div>
+                    </a>
+                    <a class="pcard" href="http://auroria.xyz/" data-year="2022" style="--c:#FF6B4A;--i:5">
+                        <div class="media"><span class="no" aria-hidden="true">07</span><img
+                                src="https://i.imgur.com/YxJqOAN.png" alt="Auroria, bot de Discord" loading="lazy"><em
+                                class="yr">2022</em><i class="go" aria-hidden="true">↗</i></div>
+                        <div class="body">
+                            <h3>Auroria</h3>
+                            <p>Un <span>bot de Discord</span>, es al que más tiempo le dedique incluso creándole una
+                                <span>página web</span> propia, donde podrías administrar su <span>dashboard</span>.</p>
+                            <div class="tags"><span class="tag">cancelado</span></div>
+                        </div>
+                    </a>
+                    <a class="pcard" href="https://www.youtube.com/@cherylcann" data-year="2020"
+                        style="--c:#C8F23A;--i:6">
+                        <div class="media"><span class="no" aria-hidden="true">08</span><img
+                                src="https://i.imgur.com/SSwB7Na.gif" alt="programación gif" loading="lazy"><em
+                                class="yr">2020</em><i class="go" aria-hidden="true">↗</i></div>
+                        <div class="body">
+                            <h3>cherylcann</h3>
+                            <p>Abrí un canal con la intención de subir <span>videos</span> ayudando al resto con
+                                <span>sistemas de programación</span>, pero luego por la falta de tiempo y ideas solo lo
+                                deje.</p>
+                        </div>
+                    </a>
+                    <div class="pcard nolink" data-year="2020" style="--c:#12F7D6;--i:7">
+                        <div class="media"><span class="no" aria-hidden="true">09</span><img
+                                src="https://i.imgur.com/lsnQAwS.gif" alt="discord developers" loading="lazy"><em
+                                class="yr">2020</em></div>
+                        <div class="body">
+                            <h3>Inicios en la programación</h3>
+                            <p>Fue gracias a la <span>pandemia</span> y <span>Discord</span> que empecé en la
+                                <span>programación</span>, creando Bots De los cuales ninguno llego a ser publico, aun
+                                asi esto me sirvio para darme cuenta de lo mucho que <span>me gusta</span> esta area.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="bands pbands" aria-hidden="true">
+                    <div class="band b2">
+                        <div class="trk"></div>
+                    </div>
+                    <div class="band b1">
+                        <div class="trk"></div>
+                    </div>
+                </div>
+            </main>
+
+            <script src="/js/main.js"></script>
+    </body>
+
+    </html>

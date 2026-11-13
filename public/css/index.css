@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@600&display=swap');
+
+
+span {
+    color: white !important;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: calc(var(--vh, 1vh) * 100) !important;
+}
+
+.content {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    align-items: center;
+}
+
+.content p {
+    font-size: 90px;
+    color: white;
+    font-family: "Encode Sans Semi Expanded", Arial, sans-serif;
+}
+
+.content img {
+    height: 375px;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+.fa-house {
+    color: #08ffda !important;
+}
+
+.content .class {
+    font-style: normal;
+    color: #08ffda
+}
+
+
+
+@media (max-width: 670px) {
+    .content {
+        width: 100%;
+        justify-content: normal;
+        height: auto;
+    }
+    .content p {
+        font-size: 35px;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    .content img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 650px){
+    .fa-house {
+        color: white !important;
+    }
+
+    #navopen li:nth-of-type(1) a {
+        background-color: rgb(8, 255, 218, 0.7);
+    }
+}

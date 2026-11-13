@@ -1,0 +1,101 @@
+<%- include ('partials/headNew.html') %>
+
+<body>
+<script>document.documentElement.className+=' js'</script>
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="glow"></div>
+
+<%- include ('partials/sidebar.html') %>
+
+<main class="about" id="hero">
+
+<section class="intro">
+<div class="intro-txt">
+<div class="eye mono"><i></i>&lt;conoceme /&gt;</div>
+<h1>
+<span class="l1">Conoce a</span>
+<span class="nm">Yadihel</span>
+</h1>
+<p class="lead">Un programador con <b class="k1">6 años</b> en el mundo de la programación, me especializo en el FrontEnd. Desde pequeño me interesé en la tecnología, sobre todo en la <b class="k2">informatica</b>, <b class="k3">innovación</b> e <b class="k4">software</b>.</p>
+<div class="soc">
+<a class="btn s" style="--c:var(--mg)" href="https://www.instagram.com/yadihel.idk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>Instagram</a>
+<a class="btn s" style="--c:#FF6B4A" href="https://www.youtube.com/@cherylcann"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>YouTube</a>
+<a class="btn s" style="--c:#A78BFF" href="https://github.com/cherylcann"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+</div>
+</div>
+
+<div class="intro-pic">
+<div class="badge" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs><text><textPath href="#c" textLength="446" lengthAdjust="spacing">6 AÑOS PROGRAMANDO • DESARROLLO WEB •&#160;</textPath></text></svg><b>6</b></div>
+<div class="chip" style="--k:24;--d:0s;left:-8%;top:20%" aria-hidden="true"><div style="color:var(--ye)">Software</div></div>
+<div class="chip" style="--k:-22;--d:-2s;right:-8%;top:56%" aria-hidden="true"><div style="color:var(--mg)">Informatica</div></div>
+<div class="frame"><img src="https://i.imgur.com/SXNmFe6.jpeg" alt="Yadihel"></div>
+<span class="pic-tag">yadihel / cherylcann</span>
+</div>
+</section>
+
+<section class="sec">
+<header class="sh rv">
+<div class="eye mono"><i></i>&lt;conocimientos /&gt;</div>
+<h2>Lo que <span>domino</span></h2>
+</header>
+
+<div class="tabs rv" role="tablist" aria-label="Categorías de conocimientos">
+<button type="button" role="tab" id="tb-lenguajes" aria-controls="tp-lenguajes" aria-selected="true">Lenguajes</button>
+<button type="button" role="tab" id="tb-backend" aria-controls="tp-backend" aria-selected="false" tabindex="-1">Backend y APIs</button>
+<button type="button" role="tab" id="tb-datos" aria-controls="tp-datos" aria-selected="false" tabindex="-1">Bases de datos y herramientas</button>
+</div>
+
+<div class="skills" id="tp-lenguajes" role="tabpanel" aria-labelledby="tb-lenguajes">
+<article class="sk rv glw" style="--c:#FFD23F;--v:90;--i:0"><img src="https://i.imgur.com/EbXsLQR.png" alt="javascript icono" style="width: 58px; height: 58px"><h3>JavaScript</h3><b class="sk-pc">90%</b><div class="bar" role="img" aria-label="JavaScript 90%"><i></i></div></article>
+<article class="sk rv glw" style="--c:#FF8A6B;--v:80;--i:1"><img src="https://i.imgur.com/uZpBgUp.png" alt="html icono" style="width: 58px; height: 58px"><h3>HTML</h3><b class="sk-pc">80%</b><div class="bar" role="img" aria-label="HTML 80%"><i></i></div></article>
+<article class="sk rv glw" style="--c:#12F7D6;--v:80;--i:2"><img src="https://i.imgur.com/sFTybqd.png" alt="css icono" style="width: 58px; height: 58px"><h3>CSS</h3><b class="sk-pc">80%</b><div class="bar" role="img" aria-label="CSS 80%"><i></i></div></article>
+<article class="sk rv glw" style="--c:#A78BFF;--v:25;--i:3"><img src="https://i.imgur.com/vSIufRg.png" alt="python icono" style="width: 58px; height: 58px"><h3>Python</h3><b class="sk-pc">25%</b><div class="bar" role="img" aria-label="Python 25%"><i></i></div></article>
+<article class="sk rv glw" style="--c:#C8F23A;--v:10;--i:4"><img src="https://i.imgur.com/Tuqjwny.png" alt="c++ icono" style="width: 58px; height: 58px"><h3>C++</h3><b class="sk-pc">10%</b><div class="bar" role="img" aria-label="C++ 10%"><i></i></div></article>
+</div>
+<div class="skills" id="tp-backend" role="tabpanel" aria-labelledby="tb-backend" hidden>
+<article class="sk info rv glw" style="--c:#C8F23A;--i:0"><img src="https://i.imgur.com/1f0A4eX.png" alt="c++ icono" style="width: 58px; height: 58px; grid-row: 1 / 3;"><h3>Node.js</h3><p>Entorno que permite ejecutar JavaScript fuera del navegador, en el servidor.</p></article>
+<article class="sk info rv glw" style="--c:#DFE4EE;--i:1"><img src="https://i.imgur.com/rX8xBR8.png" alt="c++ icono" style="width: 58px; height: 58px; grid-row: 1 / 3;"><h3>Express.js</h3><p>Framework minimalista de Node.js para crear servidores web, rutas y APIs.</p></article>
+<article class="sk info rv glw" style="--c:#3DD6F5;--i:2"><span class="sk-ic" aria-hidden="true">API</span><h3>APIs REST</h3><p>Servicios web que comparten datos mediante peticiones HTTP como GET y POST.</p></article>
+<article class="sk info rv glw" style="--c:#A78BFF;--i:3"><span class="sk-ic" aria-hidden="true">BOT</span><h3>Bots</h3><p>Programas automáticos que responden a comandos y eventos; los he creado sobre todo para Discord.</p></article>
+</div>
+<div class="skills" id="tp-datos" role="tabpanel" aria-labelledby="tb-datos" hidden>
+<article class="sk info rv glw" style="--c:#12F7D6;--i:0"><img src="https://i.imgur.com/fHxqylj.png" alt="c++ icono" style="width: 58px; height: 58px; grid-row: 1 / 3;"><h3>MongoDB</h3><p>Base de datos NoSQL que guarda la información en documentos parecidos a JSON.</p></article>
+<article class="sk info rv glw" style="--c:#FF3D9A;--i:1"><span class="sk-ic" aria-hidden="true">MGS</span><h3>Mongoose</h3><p>Librería de Node.js que modela y valida los datos de MongoDB con esquemas.</p></article>
+<article class="sk info rv glw" style="--c:#FF6B4A;--i:2"><img src="https://i.imgur.com/mU74Hsm.png" alt="c++ icono" style="width: 58px; height: 58px; grid-row: 1 / 3;"><h3>Git</h3><p>Sistema de control de versiones que guarda el historial de cambios del código.</p></article>
+<article class="sk info rv glw" style="--c:#A78BFF;--i:3"><img src="https://i.imgur.com/dyXf6qp.png" alt="c++ icono" style="width: 58px; height: 58px; grid-row: 1 / 3;"><h3>GitHub</h3><p>Plataforma para alojar repositorios Git, colaborar y publicar proyectos.</p></article>
+<article class="sk info rv glw" style="--c:#3DD6F5;--i:4"><img src="https://i.imgur.com/21kZOAY.png" alt="c++ icono" style="width: 58px; height: 58px; grid-row: 1 / 3;"><h3>Cloudinary</h3><p>Servicio en la nube para subir, almacenar y optimizar imágenes y videos.</p></article>
+</div>
+</section>
+
+<section class="sec">
+<header class="sh rv">
+<div class="eye mono"><i></i>&lt;camino /&gt;</div>
+<h2>Mi <span>camino</span></h2>
+<p>Mis logros y avances, desde mis primeros bots hasta hoy.</p>
+</header>
+<ol class="tl">
+<li class="tli rv" style="--c:#12F7D6"><span class="y">2020</span><div class="tlc glw"><h3>Inicios en la programación</h3><p>Fue gracias a la <span>pandemia</span> y <span>Discord</span> que empecé, creando bots que nunca llegaron a ser públicos. Aun así, me sirvieron para darme cuenta de lo mucho que <span>me gusta</span> esta área.</p></div></li>
+<li class="tli rv" style="--c:#C8F23A"><span class="y">2020</span><div class="tlc glw"><h3>Canal cherylcann</h3><p>Abrí un canal de <span>YouTube</span> con la intención de subir videos ayudando al resto con <span>sistemas de programación</span>.</p></div></li>
+<li class="tli rv" style="--c:#FF6B4A"><span class="y">2022</span><div class="tlc glw"><h3>Auroria</h3><p>Mi <span>bot de Discord</span> y el proyecto al que más tiempo le dediqué, incluso con una <span>página web</span> propia donde se podía administrar su <span>dashboard</span>.</p></div></li>
+<li class="tli rv" style="--c:#3DD6F5"><span class="y">2023</span><div class="tlc glw"><h3>Proyectos web</h3><p>Publiqué una <span>calculadora</span>, <span>San Valentín 2024</span> y mi <span>infografía</span> donde reuní mis proyectos e información sobre mí.</p></div></li>
+<li class="tli rv" style="--c:#FFD23F"><span class="y">2026</span><div class="tlc glw"><h3>¡Ingreso a San Marcos!</h3><p>Después de <span>año y medio</span> de estudio logré cumplir mi sueño más grande: la puerta a la universidad y el inicio de algo mucho más grande.</p></div></li>
+<li class="tli rv" style="--c:#9B85FF"><span class="y">2026</span><div class="tlc glw"><h3>AurorIA</h3><p>Experiencias de <span>visión por computadora</span> desde el navegador: juegos interactivos y herramientas de dibujo con <span>Inteligencia Artificial</span>.</p></div></li>
+</ol>
+</section>
+
+<div class="end">
+<a class="btn f" href="/proyectos">Ver proyectos →</a>
+<a class="btn" href="/">Inicio</a>
+</div>
+
+<div class="bands abands" aria-hidden="true">
+<div class="band b2"><div class="trk"></div></div>
+<div class="band b1"><div class="trk"></div></div>
+</div>
+</main>
+
+<script src="/js/main.js"></script>
+<script src="/js/conoceme.js"></script>
+</body>
+
+</html>

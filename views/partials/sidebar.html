@@ -1,0 +1,14 @@
+<% var pg = (typeof page !== 'undefined') ? page : ''; %>
+<aside>
+<div class="grp">
+<div class="av" aria-hidden="true"><b>Y</b></div>
+<a class="ic<%= pg === 'inicio' ? ' on' : '' %>" href="/" data-l="Inicio" aria-label="Inicio"<%- pg === 'inicio' ? ' aria-current="page"' : '' %>><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></a>
+<a class="ic<%= pg === 'proyectos' ? ' on' : '' %>" href="/proyectos" data-l="Proyectos" aria-label="Proyectos"<%- pg === 'proyectos' ? ' aria-current="page"' : '' %>><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></a>
+<a class="ic<%= pg === 'conoceme' ? ' on' : '' %>" href="/cherylcann" data-l="Conóceme" aria-label="Conóceme"<%- pg === 'conoceme' ? ' aria-current="page"' : '' %>><svg viewBox="0 0 24 24"><path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 11h2a2 2 0 0 1 0 4h-2M8 2v3M12 2v3"/></svg></a>
+</div>
+<div class="grp">
+<a class="ic" href="https://github.com/cherylcann" data-l="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.500-5-2.500-7-3m14 6v-3.870a3.370 3.370 0 0 0-.940-2.610c3.140-.350 6.440-1.540 6.440-7A5.440 5.440 0 0 0 20 4.770 5.070 5.070 0 0 0 19.910 1S18.730.650 16 2.480a13.380 13.380 0 0 0-7 0C6.270.650 5.090 1 5.090 1A5.070 5.070 0 0 0 5 4.770a5.440 5.440 0 0 0-1.500 3.780c0 5.420 3.300 6.610 6.440 7A3.370 3.370 0 0 0 9 18.130V22"/></svg></a>
+<a class="ic" href="https://www.youtube.com/@cherylcann" data-l="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a>
+<a class="ic" href="https://www.paypal.com/paypalme/inuyadieru" data-l="Donaciones" aria-label="Donaciones"><svg viewBox="0 0 24 24"><path d="M20.840 4.610a5.500 5.500 0 0 0-7.780 0L12 5.670l-1.060-1.060a5.500 5.500 0 0 0-7.780 7.780l1.060 1.060L12 21.230l7.780-7.780 1.060-1.060a5.500 5.500 0 0 0 0-7.780z"/></svg></a>
+</div>
+</aside>

@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    color: #08ffda
+}
+
+body {
+    margin-left: 65px;
+    height: 100vh;
+    background-color: #252627;
+    font-family: sans-serif;
+}
+
+
+
+header {
+    display: none;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.all {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    border-right: 2px solid #232226;
+    width: 65px;
+    height: 100vh;
+    background-color: #181818;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    transition: width 0.3s;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu:hover {
+    width: 300px;
+}
+
+.hrclosed {
+    height: 0px;
+    width: 0px;
+    border: 0px;
+    background-color: #252627;
+    transition: heigth 0.3s, width 0.3s;
+}
+
+.hropen {
+    height: 2px;
+    width: 100%;
+    border: 0px;
+    background-color: #252627;
+    transition: heigth 0.3s, width 0.3s;
+}
+
+.menu-cerrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-cerrado .icon {
+    text-align: center;
+    
+    
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-cerrado .navicons {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-cerrado .navend {
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    margin: -20px 0px 0px 0px;
+}
+
+.menu-cerrado .icon img {
+    width: 45px;
+    border-radius: 100%;
+    margin: 15px 0 0 0;
+    transition: width 0.3s;
+}
+
+.menu-cerrado .icon p {
+    font-size: 0px;
+    opacity: 0;
+    transition: font-size 0.3s, opacity 0.3s;
+    color: white;
+}
+
+.menu-cerrado .navicons,
+.menu-cerrado .navend {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-cerrado .navicons a,
+.menu-cerrado .navend a {
+    margin-top: 20px;
+}
+
+.menu-cerrado .navicons a i,
+.menu-cerrado .navend a i {
+    
+    color: white;
+}
+
+.menu-cerrado .navicons a p,
+.menu-cerrado .navend a p {
+    font-size: 0px;
+    opacity: 0;
+    color: rgb(204, 204, 204);
+    transition: font-size 0.3s;
+}
+
+
+
+.menu-abierto .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 40%;
+    justify-content: center;
+}
+
+.menu-abierto .icon {
+    width: 100%;
+    text-decoration: none;
+}
+
+.menu-abierto .icon img {
+    width: 150px;
+    border-radius: 100%;
+    transition: width 0.3s;
+}
+
+.menu-abierto .icon p {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    transition: font-size 0.3s;
+    letter-spacing: 1.5px;
+}
+
+.menu-abierto .navicons,
+.menu-abierto .navend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-abierto .navicons a,
+.menu-abierto .navend a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    width: 90%;
+    height: 40px;
+    margin: 10px 0px 0px;
+    border-radius: 3px;
+    transition: margin 0.3s;
+    transition:  background-color 0.4s;
+}
+
+.menu-abierto .navicons a i,
+.menu-abierto .navend a i {
+    margin-left: 10px;
+    transition: margin-left 0.3s;
+}
+
+.menu-abierto .navicons a p,
+.menu-abierto .navend a p {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: margin-left 0.5s;
+    
+}
+
+.menu-abierto .navicons a:hover,
+.menu-abierto .navend a:hover {
+    background-color: #242226;
+}
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+    body {
+        margin-left: 0px;
+        
+        height: 100vh;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        background-color: transparent;
+        height: 55px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        justify-content: space-between;
+    }
+
+    .logo {
+        text-decoration: none;
+        margin-left: 10px;
+        height: 100%;
+        width: min-content;
+        display: flex;
+        align-items: center;
+        z-index: 5;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+        
+        
+        border-radius: 30px;
+    }
+
+    .logo p {
+        margin-left: 10px;
+        font-size: 20px;
+        color: white;
+        font-family: sans-serif;
+        letter-spacing: 0.8px;
+        
+    }
+
+    header button {
+        float: right;
+        width: 50px;
+        background-color: transparent;
+        border: 0px;
+        z-index: 5;
+    }
+
+    .fa-bars {
+        font-size: 20px;
+    }
+
+    .navclosed {
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .navopen {
+        left: 0px;
+        transition: left 0.3s;
+    }
+
+    #navopen::before {
+        content: "";
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    #navopen {
+        color: white;
+        list-style: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        z-index: 3;
+    }
+
+    #navopen > li:not(:first-child) {
+        padding-top: 35px;
+    }
+
+    #navopen li {
+        z-index: 2;
+    }
+
+    #navopen li a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0px 2px rgba(255, 255, 255, 0.3);
+    }
+
+    #navopen li a i {
+        font-size: 18px;
+    }
+
+    #navopen li a p {
+        margin-left: 10px;
+    }
+
+    #navopen div {
+        margin-top: 35px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        z-index: 2;
+    }
+
+    #navopen div li a {
+        width: 40px;
+        background-color: rgb(8, 255, 218, 0.7);
+    }
+}
